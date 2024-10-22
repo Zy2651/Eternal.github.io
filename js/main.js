@@ -31,15 +31,15 @@ async function loadPastEvents() {
 
   try {
     // Try to load images from the past events directory
-            const pastEventFiles = [
-            'FinalPoster2.webp',
-            'Final.webp',
-            'Eternal.webp',
-            'AnnouncementPoster.webp',
-            '800x450.jpeg',
-            '800x450-3.jpeg',
-            '800x450-2.jpeg'
-        ];
+    const pastEventFiles = [
+      "FinalPoster2.webp",
+      "Final.webp",
+      "Eternal.webp",
+      "AnnouncementPoster.webp",
+      "800x450.jpeg",
+      "800x450-3.jpeg",
+      "800x450-2.jpeg",
+    ];
 
     // Clear existing content
     pastEventsContainer.innerHTML = "";
