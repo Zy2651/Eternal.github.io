@@ -76,6 +76,12 @@ body {
     color: #ff1500;
 }
 
+.profile-section h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
 .profile-section .profile {
     display: inline-block;
     margin: 20px;
