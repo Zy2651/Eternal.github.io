@@ -31,12 +31,15 @@ async function loadPastEvents() {
 
   try {
     // Try to load images from the past events directory
-    const pastEventFiles = [
-      "AnnouncementPoster.webp",
-      "event2.webp",
-      "event3.webp",
-      // Add more image filenames here
-    ];
+            const pastEventFiles = [
+            'FinalPoster2.webp',
+            'Final.webp',
+            'Eternal.webp',
+            'AnnouncementPoster.webp',
+            '800x450.jpeg',
+            '800x450-3.jpeg',
+            '800x450-2.jpeg'
+        ];
 
     // Clear existing content
     pastEventsContainer.innerHTML = "";
@@ -79,6 +82,8 @@ async function loadPastEvents() {
       `;
   }
 }
+
+window.addEventListener("load", loadPastEvents);
 
 var modal = document.getElementById("imageModal");
 
