@@ -255,6 +255,8 @@ body {
     display: block;
     width: 80%;
     max-width: 700px;
+    scale: 1.5;
+    padding-top: 6%;
 }
 
 .close {

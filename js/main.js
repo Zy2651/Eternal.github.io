@@ -31,15 +31,15 @@ async function loadPastEvents() {
 
   try {
     // Try to load images from the past events directory
-            const pastEventFiles = [
-            'FinalPoster2.webp',
-            'Final.webp',
-            'Eternal.webp',
-            'AnnouncementPoster.webp',
-            '800x450.jpeg',
-            '800x450-3.jpeg',
-            '800x450-2.jpeg'
-        ];
+    const pastEventFiles = [
+      "FinalPoster2.webp",
+      "Final.webp",
+      "Eternal.webp",
+      "AnnouncementPoster.webp",
+      "800x450.jpeg",
+      "800x450-3.jpeg",
+      "800x450-2.jpeg",
+    ];
 
     // Clear existing content
     pastEventsContainer.innerHTML = "";
@@ -83,5 +83,25 @@ async function loadPastEvents() {
   }
 }
 
-// Call the function when the page loads
-window.addEventListener("load", loadPastEvents);
+var modal = document.getElementById("imageModal");
+
+// Get the image and insert it inside the modal
+var modalImg = document.getElementById("modalImage");
+var images = document.querySelectorAll(".our-clubs img");
+
+images.forEach(function (image) {
+  image.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  };
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+// Call setup after page loads
+window.addEventListener("load", setupModal);
